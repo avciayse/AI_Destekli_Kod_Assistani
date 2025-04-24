@@ -1,0 +1,15 @@
+# Sanal ortam
+venv/
+__pycache__/
+
+# Gizli dosyalar
+.env
+.env.*
+
+# IDE dosyaları
+*.log
+*.swp
+.DS_Store
+
+# Docker
+*.dockerignore

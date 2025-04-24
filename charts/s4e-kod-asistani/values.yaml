@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: s4e-kod-asistani
+  tag: latest
+  pullPolicy: Never
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 5000
+  nodePort: 31007

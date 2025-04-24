@@ -1,0 +1,5 @@
+apiVersion: v2
+name: s4e-kod-asistani
+description: S4E Kod Üretici Flask uygulaması için Helm Chart
+version: 0.1.0
+appVersion: "1.0"
