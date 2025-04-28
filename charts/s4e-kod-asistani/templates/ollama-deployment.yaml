@@ -1,0 +1,21 @@
+{{- if .Values.ollama.enabled }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "{{ .Release.Name }}-ollama-deployment"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "{{ .Release.Name }}-ollama"
+  template:
+    metadata:
+      labels:
+        app: "{{ .Release.Name }}-ollama"
+    spec:
+      containers:
+        - name: ollama
+          image: "{{ .Values.ollama.image.repository }}:{{ .Values.ollama.image.tag }}"
+          ports:
+            - containerPort: {{ .Values.ollama.service.port }}
+{{- end }}

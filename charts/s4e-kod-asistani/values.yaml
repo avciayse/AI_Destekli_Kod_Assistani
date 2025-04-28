@@ -1,12 +1,24 @@
 replicaCount: 1
 
 image:
-  repository: s4e-kod-asistani
+  repository: s4e-kod-asistani-backend
+  pullPolicy: IfNotPresent
   tag: latest
-  pullPolicy: Never
 
 service:
   type: NodePort
-  port: 80
-  targetPort: 5000
-  nodePort: 31007
+  port: 8080
+  nodePort: 31008
+
+
+env:
+  OLLAMA_URL: "http://ollama-service:11434/api/generate"
+
+ollama:
+  enabled: true
+  image:
+    repository: ollama/ollama
+    tag: latest
+  service:
+    type: ClusterIP
+    port: 11434
