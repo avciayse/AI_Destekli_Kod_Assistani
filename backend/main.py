@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template
 import requests
 import traceback
 
-app = Flask(__name__, template_folder="backend/templates")
+app = Flask(__name__, template_folder="templates")
 
 @app.route('/', methods=['GET'])
 def home():

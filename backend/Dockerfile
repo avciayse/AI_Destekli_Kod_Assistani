@@ -9,7 +9,7 @@ WORKDIR /app
 # Sadece gerekli dosyaları kopyala
 COPY requirements.txt .
 COPY main.py .
-COPY templates/ templates/
+COPY templates/ ./templates/
 
 # Paketleri yükle
 RUN pip install --no-cache-dir \
@@ -19,7 +19,6 @@ RUN pip install --no-cache-dir \
 # Ortam değişkenleri
 ENV OLLAMA_URL=http://host.docker.internal:11434/api/generate
 
-COPY backend/ ./backend/
-
 # Uygulamayı çalıştır
-CMD ["python", "./backend/main.py"]
+CMD ["python", "main.py"]
+
