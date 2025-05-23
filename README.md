@@ -1,6 +1,6 @@
 # 🤖 Yapay Zekâ Destekli Kod Üretici
 
-Bu proje, S4E DevOps staj teknik değerlendirme görevi kapsamında hazırlanmış, Flask tabanlı ve yapay zekâ destekli bir kod üretici web uygulamasıdır. Kullanıcıdan alınan prompt’a göre Python kodu üreten bir LLM (Codellama) ile entegredir.
+Bu proje, Flask tabanlı ve yapay zekâ destekli bir kod üretici web uygulamasıdır. Kullanıcıdan alınan prompt’a göre Python kodu üreten bir LLM (Codellama) ile entegredir.
 
 ---
 

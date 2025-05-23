@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: s4e-kod-asistani-backend
+  repository: AI_Destekli_Kod_Assistani-backend
   pullPolicy: IfNotPresent
   tag: latest
 

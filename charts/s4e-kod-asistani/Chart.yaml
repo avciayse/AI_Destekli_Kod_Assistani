@@ -1,5 +1,5 @@
 apiVersion: v2
-name: s4e-kod-asistani
+name: AI_Destekli_Kod_Assistani
 description: Basit bir AI destekli kod üretici Flask uygulaması
 type: application
 version: 0.1.0
